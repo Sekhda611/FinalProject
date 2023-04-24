@@ -14,16 +14,18 @@ public class Main {
         System.out.print("Enter a String : ");
         // Read the user's message and store it in String variable
         String message = input.nextLine();
-        //Prompt the user to enter 'E' to encrypt or 'D' to decrypt
-        System.out.print("Enter a E for Encrypt or D for Decrypt the String: ");
-        // Read the user's operation input and store it in a String variable
-        String c = input.next();
 
         // Prompt the user to enter an integer key value for encryption or decryption
         System.out.println("Enter a number to shift Encrypt or Decrypt: ");
         // Read the user's key input and store it in an int variable
         int key = input.nextInt();
+        //newline character from the previous input
         input.nextLine();
+
+        //Prompt the user to enter 'E' to encrypt or 'D' to decrypt
+        System.out.print("Enter a E for Encrypt or D for Decrypt the String: ");
+        // Read the user's operation input and store it in a String variable
+        String c = input.next();
 
         // Create a CaesarCipher object with the given key
         CaesarCipher cipher = new CaesarCipher(key);
